@@ -5,17 +5,17 @@ The purpose of this project is to demonstrate my ability to collect, work with, 
 The goal is to prepare tidy data that can be used for later analysis.
 
 
-## Directory and Code Information
+## Directory ,Code , Input and Output Information
 
 Directory Listing
 
+* run_analysis.R
+* Readme.md
+* codebook.md
 * MLAssignment/ 
-  * run_analysis.R
   * merge_one.txt
   * merge_two_tidy_set.txt
 * UCI HAR Dataset/
-* Readme.md
-* codebook.md
 
 ## Pre-requisites
 Download and place the datasets at predefined location.
@@ -35,7 +35,7 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-### Manuel David Pandian 
+#### Copyright : Manuel David Pandian 
 
 
 
