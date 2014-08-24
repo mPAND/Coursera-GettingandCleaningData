@@ -69,9 +69,23 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 
 R script `run_analysis.R` performs the following
 
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names. 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+1. Reads the test data from respective locations
+2. Stores the data  as Dataframe `tst_ds` , `tst_label` and `tst_subject`.
+3. Reads the training data  from respective locations
+4. Stores the data  as Dataframe `train_ds` , `train_label` and `train_subject`.
+5. Reads the activity label from `activity_labels.txt` into Dataframe `actv_label`.
+6. Reads the features label from `features.txt` into Dataframe `ds_label`.
+7. Adds appropriate column name to `actv_label`
+8. Extracts column name stored in `ds_label$V2` and applies it to `tst_ds` and `train_ds`.
+9. Adds `activity_id` label to `tst_label` and `train_label` dataframe.
+10. Adds `subject_id` label to `tst_subject` and `train_subject` dataframe.
+11. Identify column names containing `mean` and `std` and retain these columns from features dataset
+12. Consolidates all Training dataset `Features`, `Activity` and `Subject` into singe dataset
+13. Consolidates all Test dataset `Features`, `Activity` and `Subject` into singe dataset
+14. Combine Test and Training dataset as one single dataset `cons_ds`
+15. Include Activity Description from `actv_label` based on `activity_id` of `cons_ds`
+16. Export as File `merge_one.txt`
+17. Creates a Tidy dataset `m2` by calculating means of features for each Activity and Subject
+18. Export as File `merge_two_tidy_set.txt`
 
+## End of Code Book . Copyright Manuel David Pandian.
