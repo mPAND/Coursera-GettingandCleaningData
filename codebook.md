@@ -88,4 +88,5 @@ R script `run_analysis.R` performs the following
 17. Creates a Tidy dataset `m2` by calculating means of features for each Activity and Subject
 18. Export as File `merge_two_tidy_set.txt`
 
-## End of Code Book . Copyright Manuel David Pandian.
+#### End of Code Book 
+#### Copyright Manuel David Pandian.
